@@ -29,7 +29,7 @@ pip install -r requirements.txt
 cp .env.example .env     # add a free key from https://aistudio.google.com/apikey
 uvicorn app.main:app --reload
 ```
-Open http://localhost:8000/docs, upload a PDF with `POST /documents`, then call `POST /ask`.
+Open http://localhost:8000/docs, upload a PDF with `POST /documents`, then call `POST /ask`. A sample PDF is included: `samples/company_handbook.pdf` (try "How many days of annual leave do employees get?").
 
 ## Run with PostgreSQL + pgvector
 ```bash
