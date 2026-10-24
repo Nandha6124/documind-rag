@@ -4,6 +4,11 @@ Upload PDFs, ask questions in plain English, and get answers grounded in your do
 
 **Stack:** Python, FastAPI, PostgreSQL + pgvector, SQLAlchemy, Pydantic, Google Gemini (embeddings + generation), pypdf, Docker
 
+## Example
+Asking a question about an uploaded PDF. The answer cites the file, page, similarity score and the passage it came from:
+
+![DocuMind answer with source citations](docs/screenshot-ask.png)
+
 ## How it works
 ```
 PDF -> extract text per page -> chunk (size + overlap) -> embed -> store vectors
